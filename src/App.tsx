@@ -1,13 +1,14 @@
-import { useState } from 'react';
-import './App.css';
+import "./App.css";
+import Body from "./components/Body";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 export const App = () => {
-  const [count, setCount] = useState(0);
-
   return (
-    <div className="App">
-      <h1>Hello.</h1>
-      <button onClick={() => setCount(count + 1)}>count: {count}</button>
-    </div>
+    <>
+      <Header />
+      <Body />
+      <Footer />
+    </>
   );
 };
